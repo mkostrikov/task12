@@ -104,7 +104,8 @@ function getPerfectPartner(string $surname, string $name, string $patronymic, ar
         $shortName = getShortName($fullname);
         $shortNamePartner = getShortName($partner['fullname']);
         $message = <<<message
-        $shortName + $shortNamePartner = <br>
+        $shortName + $shortNamePartner <br>
+        = <br>
         ♡ Идеально на {$percentCompatibility()}% ♡
         message;
         echo "$message";
